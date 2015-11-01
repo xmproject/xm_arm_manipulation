@@ -1,0 +1,5 @@
+<launch>
+  <node name="xm_position_server" pkg="xm_arm_control" type="xm_arm_position_service_server.py" />
+  <node name="xm_height_action" pkg="xm_arm_control" type="xm_arm_height_action_server.py" />
+  <node name="xm_wrist_action" pkg="xm_arm_control" type="xm_wrist_action_server.py" />
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node name="joy" pkg="joy" type="joy_node" />
+  <node name="xm_joystick_control" pkg="xm_arm_teleop" type="xm_joystick_teleop_arm" output="screen" />	
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+  <!--param
+    name="robot_description"
+    textfile="$(find xm_description)/urdf/xm_robot_with_arm.urdf" /-->
+
+  <node pkg="xm_arm_control" type="xm_arm_publish_joint_state" name="xm_joint_state_pub" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_pub" >
+    <param name="publish_frequency" type="double" value="20.0" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find xm_arm_control)/config/arm_control.rviz" />
+</launch>

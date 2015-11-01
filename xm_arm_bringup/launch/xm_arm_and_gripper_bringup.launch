@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find xm_arm_bringup)/launch/xm_arm_bringup.launch" />
+  <include file="$(find xm_arm_bringup)/launch/xm_gripper_bringup.launch" />
+  <node name="xm_action_get_position" pkg="xm_arm_control" type="xm_arm_action_get_position.py" />
+  <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0 0 0 0 0 0 base_link camera_link 50" />
+</launch>
