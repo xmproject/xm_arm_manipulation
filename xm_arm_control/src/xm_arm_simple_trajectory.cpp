@@ -34,7 +34,7 @@
 
 // Description: Test arm's trajectory.
 
-// Create Data: 2015.11.1
+// Create Date: 2015.11.1
   
 // Authors: myyerrol  
 

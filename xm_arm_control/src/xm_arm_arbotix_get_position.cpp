@@ -35,7 +35,7 @@
 // Description: Get joint's position from the action's topic by using the arbotix
 // controller.
 
-// Create Data: 2015.11.1
+// Create Date: 2015.11.1
   
 // Authors: myyerrol  
 
